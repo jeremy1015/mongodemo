@@ -1,0 +1,30 @@
+<DOCTYPE HTML>
+<html ng-app>
+	<head>
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+		<script type="text/javascript" src="jquery.min.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="index.js"></script>
+	</head>
+	<body ng-controller="MongoCtrl">
+		<h3 style="margin-left:50px; margin-bottom:30px;">CD Browser</h3>
+		<div class="row">
+			<div class="span6 well">
+				<input type="text" ng-model="songquery" /> <button type="button" class="btn btn-small" ng-click="searchByArtist();">Search By Song</button>
+				<input type="text" ng-model="titlequery" /> <button type="button" class="btn btn-small" ng-click="searchByTitle();">Search By Album Title</button>
+				<br/><br/>
+				<ul>
+					<li ng-repeat="cd in cds" ng-click="cdSelected(cd);">{{cd.title}}</li>
+				</ul>
+			</div>
+			<div class="span6">
+				Title: <input ng-model="activeCD.title"></input>
+				<br/><br/><br/>
+				<button type="button" class="btn btn-small" ng-click="save();">Save</button>
+				<button type="button" class="btn btn-small" ng-click="clearActiveCD();">Clear</button>
+			</div>
+		</div>
+		
+	</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "mongodemo",
+  "version": "0.0.1",
+  "dependencies": {
+    "express": "3.2.3",
+    "mongodb": "1.2.x",
+    "lodash": "1.0.x",
+    "connect": "2.7.x",
+    "q": "0.8.x",
+    "q-mongodb": "git://github.com/fizker/QMongoDB.git",
+    "knox": "0.6.0",
+    "formidable": "latest",
+    "pause": "0.0.1",
+    "loggy": "0.1.0"
+  },
+  "engines": {
+    "node": "0.8.x",
+    "npm": "1.1.x"
+  },
+  "devDependencies": {
+    
+  },
+  "scripts": {
+     
+  }
+}
